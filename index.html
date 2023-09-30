@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+            <h2 class="header__title">¿Cuánto sabes sobre deportes?</h2>
+            <div class="header__gif">
+                <img src="https://cdn-icons-gif.flaticon.com/6172/6172541.gif" alt="">
+            </div>
+            <a href="#secOptions" class="header__cta" id="headerBtn">Haz una prueba</a>
+        </header>
+        <section class="secTrivia" id="trivia">
+            <p class="secTrivia__title">TRIVIA</p>
+            <div>
+                <div class="secTrivia__questions" id="questions"></div>
+                <p class="secTrivia__questionsCount" id="questionCounter"></p>
+            </div>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <p id="level"></p>
+            <p id="info"></p>
+        </section>
+        <section class="secScore" id="secScore">
+            <div>
+                <p id="scoreMessage"></p>
+                <a href="#home" class="scoreMessage__cta" id="secScoreBtn">Regresar</a>
+            </div>
+            <p id="scoreInfo"></p>
+        </section>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

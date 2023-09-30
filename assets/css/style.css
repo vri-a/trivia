@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css?family=Signika:700,300,600");
+
+:root {
+  --Razzmatazz-color: #f60460;
+  --CaribbeanGreen-color: #0ccbad;
+  --Sandwisp-color: #f5efaf;
+  --nero-color: #1c1c1c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  font-family: "Signika", sans-serif;
+  background-color: var(--nero-color);
+  -webkit-tap-highlight-color: transparent;
+}
+
+header,
+section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  letter-spacing: 1px;
+  padding: 0 2em;
+  height: 100vh;
+}
+
+.header__title {
+  font: bold 10.5vw/1.4 "Signika", sans-serif;
+  width: 80%;
+  text-align: center;
+  color: #fff;
+}
+
+.header__gif {
+  width: 25%;
+  height: 25%;
+  text-align: center;
+  margin-bottom: 6em;
+}
+
+.header__gif > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3em;
+  text-decoration: none;
+  color: var(--nero-color);
+  border: 1px solid transparent;
+  background-color: #fff;
+  transition: background-color 1s;
+  font: bold 4.5vw "Signika", sans-serif;
+  width: 80%;
+  padding: 1em;
+  text-align: center;
+}
+
+.header__cta:hover {
+  background-color: rgba(31, 31, 31, 0.5);
+  color: #fff;
+  border: 1px solid var(--CaribbeanGreen-color);
+}
+
+.secScore > div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3em;
+  text-align: center;
+  margin-bottom: 1em;
+  border: 1px solid #fff;
+  padding: 0.5em;
+  width: 90%;
+  height: 60%;
+}
+
+.secTrivia {
+  background-color: var(--Razzmatazz-color);
+  color: var(--nero-color);
+}
+
+.secTrivia__title {
+  font: bold 4vw "Signika", sans-serif;
+  text-align: center;
+  height: max-content;
+  background-color: transparent;
+  color: #fff;
+  margin-bottom: 1em;
+}
+
+.secTrivia > div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  height: 35%;
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+.secTrivia__questions {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 0.2em;
+  font-size: 1.5em;
+  padding: 1em;
+}
+
+.secTrivia__questionsCount {
+  width: 100%;
+  height: 15%;
+  background-color: transparent;
+  text-align: center;
+  padding: 0.5em;
+  color: #1c1c1c;
+}
+
+.secTrivia > button {
+  all: unset;
+  text-align: center;
+  margin-bottom: 1em;
+  width: 100%;
+  height: 5%;
+  background-color: #fff;
+  border-radius: 0.3em;
+  font-size: 1.2em;
+}
+
+button {
+  cursor: pointer;
+}
+
+#info {
+  text-align: center;
+  width: 100%;
+  height: 15%;
+  margin-top: 1em;
+}
+
+#scoreMessage {
+  width: 100%;
+  padding: 1em;
+  font-size: 4vw;
+  margin-bottom: 1em;
+  color: #fff;
+}
+
+.secScore > div {
+  margin: auto;
+}
+
+#scoreInfo {
+  font-size: 1em;
+  color: #fff;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+@media (min-width: 750px) {
+  .header__title {
+    font: bold 8.5vw/1.4 "Signika", sans-serif;
+  }
+
+  a {
+    width: 60%;
+    height: 30px;
+    font: bold 4vw "Signika", sans-serif;
+  }
+  .secTrivia > p {
+    font-size: 2em;
+  }
+
+  .secTrivia__title {
+    font: bold 1.5vw "Signika", sans-serif;
+  }
+  .secTrivia > div {
+    height: 30%;
+  }
+
+  .secTrivia__questions {
+    font-size: 2.5em;
+  }
+  .secTrivia__questionsCount {
+    font-size: 2em;
+  }
+
+  .secTrivia > button {
+    font-size: 2.2em;
+  }
+
+  #scoreInfo {
+    font-size: 1.8em;
+  }
+}
+@media (min-width: 900px) {
+  .secTrivia > div {
+    width: 85%;
+    height: 30%;
+  }
+
+  .secTrivia__questions {
+    font-size: 3.3em;
+    padding: 1em;
+  }
+
+  .secTrivia__questionsCount {
+    font-size: 2.5em;
+  }
+
+  .secTrivia > button {
+    width: 85%;
+    font-size: 2.8em;
+    margin-bottom: 1em;
+  }
+
+  .secTrivia > p {
+    font-size: 2.5em;
+  }
+
+  #scoreMessage {
+    width: 80%;
+    font-size: 5vw;
+  }
+
+  #scoreInfo {
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__title {
+    width: 60%;
+    font: bold 5.5vw/1.4 "Signika", sans-serif;
+    margin-bottom: 0.5em;
+  }
+
+  a {
+    width: 40%;
+    font: bold 2vw "Signika", sans-serif;
+  }
+
+  .secTrivia__title {
+    padding-top: 0.2em;
+  }
+
+  .secTrivia__questions {
+    font-size: 1.8em;
+    padding: 1em;
+  }
+
+  .secTrivia__questionsCount {
+    font-size: 1.3em;
+  }
+
+  .secTrivia > button {
+    font-size: 1.3em;
+    margin-bottom: 0.6em;
+    padding: 0.2em;
+  }
+
+  .secTrivia > p {
+    font-size: 1.3em;
+  }
+
+  .secScore > div {
+    width: 60%;
+  }
+
+  #scoreMessage {
+    width: 80%;
+    font-size: 3vw;
+  }
+
+  #scoreInfo {
+    font-size: 1.5em;
+  }
+  
+}
+
+@media (min-width: 1768px) {
+  .header__title {
+    font: bold 3.5vw/1.4 "Signika", sans-serif;
+  }
+
+  a {
+    width: 40%;
+    padding: 2em;
+    font: bold 1vw "Signika", sans-serif;
+  }
+
+  .secTrivia__title {
+    font: bold 2vw "Signika", sans-serif;
+  }
+
+  .secTrivia > div {
+    height: 35%;
+    margin: auto;
+  }
+
+  #scoreMessage {
+    font-size: 2vw;
+  }
+}
+
+.secTrivia,
+#secScore {
+  display: none;
+}
